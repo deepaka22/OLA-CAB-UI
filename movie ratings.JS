@@ -2,7 +2,7 @@
 
 // title, which is a String representing the title of the movie
 // studio, which is a String representing the studio that made the movie
-// rating, which is a String representing the rating of the movie (i.e. PG­13, R, etc)
+// rating, which is a String representing the rating of the movie (i.e. PGÂ­13, R, etc)
 // a) Write a constructor for the class Movie, which takes a String representing the title of the movie, 
 a String representing the studio, and a String representing the rating as its arguments, and sets the respective class properties to these values.
 
@@ -73,26 +73,18 @@ class movie {
          return (this.rating = rating);
         }
    }
-getpg(films){
+ }
 
-   var info = films.filter((ele)=>ele.rating == 'PG')
-   return info;
-
-}
-}
-
-var film1 = new movie ('vikram','Red Giant', 'PG-13');
+var film1 = new movie ('Casino Royale','Eon productions', 'PG-13');
 var film2 = new movie ('Thuppaki','studio green'  )
 var film3 = new movie ('vedalam','studio green', 'PG-13');
 var film4 = new movie ('Dhurvam','vanamagan studios');
 
 var films = [film1, film2, film3, film4];
 
-console.log(film1.getpg(films));
+console.log(films);
 
-
-
-// d) Write a piece of code that creates an instance of the class Movie with the title  “Casino Royale”, the studio “Eon Productions”, and the rating “PG­13”
+// d) Write a piece of code that creates an instance of the class Movie with the title  â€œCasino Royaleâ€, the studio â€œEon Productionsâ€, and the rating â€œPGÂ­13â€
 
 
 class movie {
